@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* header, footer 공용 CSS */
+/* 메인, 상세페이지에서 공통으로 사용하기 때문 */
+
+.wrpa {
+  background-color: rgb(241, 241, 241);
+}
+
+/* 헤더 */
+
+.header__bg {
+  height: 500px;
+  background: url(../images/1024x450.jpg);
+  background-size: cover;
+  display: flex;
+  /* 수직정렬 */
+  flex-direction: column;
+  /* 정가운데로 정렬 */
+  align-items: center;
+  justify-content: center;
+}
+
+.header__bg > .location-card {
+  color: #fff;
+  background-color: rgba(33, 37, 41, 0.5) !important;
+}
+
+.header__bg > .location-card .card-subtitle {
+  color: #fff !important;
+}
+
+/* 푸터 */
+
+footer {
+  height: 150px;
+}
+
+footer > div:nth-child(1) {
+  background-color: #ddd;
+  text-align: left;
+  /* 수직 가운데 정렬 */
+  height: 50px;
+  line-height: 50px;
+}
+
+footer > div:nth-child(2) {
+  background-color: #fff;
+  height: 100px;
+  padding-top: 30px;
+}
+
+footer > div:nth-child(2) > div {
+  font-size: 13px;
+  text-align: center;
+}
+
+footer a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
